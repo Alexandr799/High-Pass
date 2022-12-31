@@ -1,0 +1,5 @@
+<svg id = "x-map" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="10" r="10" fill="#999999"/>
+<rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white"/>
+<rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)" fill="white"/>
+</svg>

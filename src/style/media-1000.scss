@@ -1,0 +1,172 @@
+@media (max-width: 1000px) {
+    .container {
+        max-width: 714px;
+    }
+
+    .header {
+        position: relative;
+
+        &__container {
+            flex-wrap: wrap;
+            padding: 27px 0;
+            padding-bottom: 0;
+        }
+
+        &__nav {
+            width: 100%;
+        }
+
+        &__logo {
+            margin-bottom: 34px;
+        }
+
+        &__search-wrapper {
+            top: 26px;
+            right: 0;
+            transform: translate(0, 0);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $default-4;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 80px;
+        }
+    }
+
+    .nav {
+        z-index: 2;
+
+        &__list {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin: 0;
+            margin-right: 11px;
+            margin-bottom: 11px;
+        }
+    }
+
+    .hero-grid {
+        grid-template-rows: minmax(289px, auto);
+        grid-auto-rows: minmax(133px, auto);
+
+        &__img {
+            height: 133px;
+        }
+
+        &__head-item {
+            background-image: url("../resorces/images/photo-v-tumane.jpg");
+        }
+
+        &__subhead-item {
+            padding-bottom: 240px;
+            background-image: url("../resorces/images/baba-i-neon.jpg");
+        }
+
+        &__hash {
+            top: 18px;
+        }
+    }
+
+    .hero {
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__title {
+            font-size: 33px;
+            margin-bottom: 17px;
+        }
+    }
+
+    .about {
+        padding-bottom: 63px;
+        &__form {
+            background-image: url("../resorces/images/cannon-768.jpg");
+            padding-top: 591px;
+        }
+    }
+
+    .project {
+        padding-bottom: 71px;
+
+        &__list {
+            grid-template-rows: 300px;
+            grid-auto-rows: minmax(303px, auto);
+        }
+
+        &__item {
+            grid-column: span 8;
+        }
+
+        &__item:nth-child(3) {
+            grid-column: span 8;
+        }
+
+        .project-photo-3 {
+            background-image: url("../resorces/images/hlam.jpg");
+        }
+
+        .project-photo-4 {
+            background-image: url("../resorces/images/babiy-glaz.jpg");
+        }
+
+        & .item-big {
+            grid-column: span 24;
+        }
+
+        & .item-medium {
+            grid-column: span 12;
+        }
+
+        &__hash {
+            top: 5px;
+            right: 7px;
+        }
+
+        &__article-big {
+            padding: 32px 392px 33px 30px;
+        }
+    }
+
+    .contacts {
+        padding-bottom: 52px;
+        &__grid {
+            gap: 25px;
+        }
+
+        &__map-wrapper {
+            grid-column: span 24;
+        }
+
+        &__address {
+            padding: 20px 232px 20px 30px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+
+        &__form {
+            grid-column: span 16;
+        }
+
+        &__form-title {
+            margin-bottom: 7px;
+        }
+    }
+
+    .footer__descr {
+        display: none;
+    }
+
+    .footer__container {
+        justify-content: space-between;
+    }
+}

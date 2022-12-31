@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Фотостудия в Москве, фотосесси в лучший антуражах с первоклассными фотографами под ключ!">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/Roboto-Regular.woff">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/Roboto-Regular.woff2">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/TTFirsNeue-Regular.woff">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/TTFirsNeue-Regular.woff2">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/TTFirsNeue-Bold.woff2">
+  <link rel="preload" as="font" crossorigin href="./resorces/fonts/TTFirsNeue-Bold.woff">
+  <link rel="shortcut icon" href="./resorces/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>High pass | Фотостудия</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <picture class="header__logo">
+        <source srcset="./resorces/images/logo-small.png" media="(max-width: 530px)">
+        <source srcset="./resorces/images/Logo-1024.png" media="(max-width: 1390px)">
+        <img src="./resorces/images/Logo.png" alt="Логотип">
+      </picture>
+      <nav class="header__nav nav">
+        <button class="reset-style-btn nav__burger burger display-none" aria-label="Открыть меню">
+          <span class="burger__line-1"></span>
+          <span class="burger__line-2"></span>
+          <span class="burger__line-3"></span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              О&nbsp;студии
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#project" class="nav__link">
+              Наши&nbsp;проекты
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Услуги
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Мастер&nbsp;-&nbsp;классы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">
+              Контакты
+            </a>
+          </li>
+          <li class="nav__item display-none tel-item">
+            <a href="tel:+749542423532" class="nav__tel tel">
+              +7 495 424-23-532
+            </a>
+          </li>
+          <li class="nav__item  display-none">
+            <button class="close-x nav__close reset-style-btn" aria-label="Закрыть меню">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" />
+                <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
+                <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                  fill="white" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search-wrapper">
+        <input type="text" placeholder="Что будем искать?" class="header__search-input">
+        <button class="header__search search reset-style-btn" aria-label="Открыть/закрыть поиск по сайту">
+          <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__btn-svg">
+            <path
+              d="M24.9113 22.8136L19.8536 18.3573C21.341 16.3763 22.1457 13.9543 22.1457 11.4068C22.1457 8.35737 20.9904 5.49807 18.9013 3.34219C16.8123 1.18631 14.0293 0 11.0728 0C8.11639 0 5.33342 1.19011 3.24434 3.34219C1.15157 5.49427 0 8.35737 0 11.4068C0 14.4524 1.15527 17.3193 3.24434 19.4714C5.33342 21.6273 8.1127 22.8136 11.0728 22.8136C13.5458 22.8136 15.8932 21.9847 17.8162 20.4562L22.8739 24.9086C22.902 24.9376 22.9354 24.9606 22.9721 24.9762C23.0088 24.9919 23.0482 25 23.088 25C23.1277 25 23.1671 24.9919 23.2038 24.9762C23.2406 24.9606 23.2739 24.9376 23.302 24.9086L24.9113 23.2546C24.9394 23.2257 24.9617 23.1913 24.9769 23.1535C24.9922 23.1156 25 23.0751 25 23.0341C25 22.9931 24.9922 22.9526 24.9769 22.9147C24.9617 22.8769 24.9394 22.8425 24.9113 22.8136ZM16.9193 17.4296C15.3543 19.0379 13.28 19.9238 11.0728 19.9238C8.86565 19.9238 6.79134 19.0379 5.22638 17.4296C3.66511 15.8174 2.80512 13.6805 2.80512 11.4068C2.80512 9.13303 3.66511 6.99236 5.22638 5.384C6.79134 3.77565 8.86565 2.88972 11.0728 2.88972C13.28 2.88972 15.358 3.77184 16.9193 5.384C18.4806 6.99616 19.3406 9.13303 19.3406 11.4068C19.3406 13.6805 18.4806 15.8212 16.9193 17.4296Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__container hero-grid">
+        <div class='hero-grid__head-item'>
+          <div class="hash hero-grid__hash">
+            #мастеркласс
+          </div>
+          <span class="hero__descr">
+            Мастер-класс от&nbsp;Игоря Робова
+          </span>
+          <h1 class="hero__title">
+            Неоновый фотосет 2.0 7&nbsp;июля 20:00
+          </h1>
+          <button class="hero__btn prim-button" aria-label="Узнать больше">
+            Узнать больше
+          </button>
+        </div>
+        <div class='hero-grid__subhead-item'>
+          <h2 class="hero__subtitle">
+            Работы участников предыдущего мастер-класса
+          </h2>
+        </div>
+        <div class='hero-grid__item'>
+          <picture>
+            <source srcset="./resorces/images/hero-photo-latst-3.jpg" media="(max-width: 530px)">
+            <source srcset="./resorces/images/baba-neon-1024.jpg" media="(max-width: 766px)">
+            <source srcset="./resorces/images/baba-isniyi-fonar-768.jpg" media="(max-width: 1000px)">
+            <source srcset="./resorces/images/baba-neon-1024.jpg" media="(max-width: 1390px)">
+            <img src="./resorces/images/photo-1.jpg" alt="Фото" class="hero-grid__img">
+          </picture>
+        </div>
+        <div class='hero-grid__item'>
+          <picture>
+            <source srcset="./resorces/images/hero-photo-latst-4.jpg" media="(max-width: 530px)">
+            <source srcset="./resorces/images/baba-smotrit-v-levo-1024.jpg" media="(max-width: 766px)">
+            <source srcset="./resorces/images/baba-smotrit-v-levo-768.jpg" media="(max-width: 1000px)">
+            <source srcset="./resorces/images/baba-smotrit-v-levo-1024.jpg" media="(max-width: 1390px)">
+            <img src="./resorces/images/photo-2.jpg" alt="Фото" class="hero-grid__img">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <h2 class="about__title title">
+          О&nbsp;студии
+        </h2>
+        <div class="about__info">
+          <div class="about__text">
+            В&nbsp;рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно
+            синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны:
+            высокотехнологичная концепция общественного уклада требует от&nbsp;нас анализа соответствующих условий
+            активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость
+            распределения внутренних резервов и&nbsp;ресурсов. Безусловно, граница обучения кадров предоставляет широкие
+            возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения
+            предполагает независимые способы реализации новых принципов формирования материально-технической
+            и&nbsp;кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только
+            методом политического участия и&nbsp;нарушающими общечеловеческие нормы этики.
+          </div>
+          <form class="about__form">
+            <h3 class="about__title-form">
+              Подписаться на рассылку
+            </h3>
+            <div class="about__input-wrapper">
+              <div class="wrapper-for-input-error about__error-input">
+                <input type="text" class="about__input" placeholder="Email" data-email="true"
+                  name="post-for-mailing-list">
+              </div>
+              <button class="about__btn prim-button" aria-label="Отправить почту для подписки на рассылку">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="project" id="project">
+      <div class="container project__container">
+        <h2 class="title project__title">
+          Наши проекты
+        </h2>
+        <ul class="project__list">
+          <li class="project__item">
+            <article class="project__article-small project-photo-1">
+              <div class="hash project__hash">
+                #пейзаж
+              </div>
+              <h3 class="project__article-title">
+                Синтетически, смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени...
+              </h3>
+              <span class="project__date">
+                16&nbsp;июня
+              </span>
+            </article>
+          </li>
+          <li class="project__item">
+            <article class="project__article-small project-photo-2">
+              <div class="hash project__hash">
+                #портрет
+              </div>
+              <h3 class="project__article-title">
+                В своём стремлении улучшить опыт мы упускаем, что явные...
+              </h3>
+              <span class="project__date">
+                28&nbsp;мая
+              </span>
+            </article>
+          </li>
+          <li class="project__item">
+            <article class="project__article-small project-photo-3">
+              <div class="hash project__hash">
+                #предмет
+              </div>
+              <h3 class="project__article-title">
+                Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада
+              </h3>
+              <span class="project__date">
+                14&nbsp;мая
+              </span>
+            </article>
+          </li>
+          <li class="project__item item-big">
+            <article class="project__article-big project-photo-4">
+              <div class="hash project__hash">
+                #fuji
+              </div>
+              <span class="project__date">
+                14&nbsp;мая
+              </span>
+              <h3 class="project__article-title-big">
+                Cемантический разбор
+              </h3>
+              <p class="project__article-descr">
+                В&nbsp;рамках спецификации современных стандартов, интерактивные прототипы
+              </p>
+              <button class="project__btn secondary-button" aria-label="Узнать больше о проекте">
+                О&nbsp;проекте
+              </button>
+            </article>
+          </li>
+          <li class="project__item item-big">
+            <article class="project__article-big project-photo-5">
+              <div class="hash project__hash">
+                #проектзабвение
+              </div>
+              <span class="project__date">
+                14&nbsp;мая
+              </span>
+              <h3 class="project__article-title-big">
+                Забвение
+              </h3>
+              <p class="project__article-descr">
+                Играет важную роль в&nbsp;формировании глубокомысленных рассуждений
+              </p>
+              <button class="project__btn secondary-button" aria-label="Узнать больше о проекте">
+                О&nbsp;проекте
+              </button>
+            </article>
+          </li>
+          <li class="project__item item-medium">
+            <article class="project__article-small project-photo-6">
+              <div class="hash project__hash">
+                #ретушь
+              </div>
+              <h3 class="project__article-title">
+                Как принято считать, многие известные личности и&nbsp;по&nbsp;сей день остаются уделом либералов...
+              </h3>
+              <span class="project__date">
+                14&nbsp;мая
+              </span>
+            </article>
+          </li>
+          <li class="project__item item-medium">
+            <article class="project__article-small project-photo-7">
+              <div class="hash project__hash">
+                #портрет
+              </div>
+              <h3 class="project__article-title">
+                С&nbsp;учётом сложившейся международной обстановки, новая модель организационной...
+              </h3>
+              <span class="project__date">
+                14&nbsp;мая
+              </span>
+            </article>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <h2 class="title contacts__title">
+          Контакты
+        </h2>
+        <div class="contacts__grid">
+          <div class="contacts__map-wrapper">
+            <address class="contacts__address">
+              <button class="contacts__close reset-style-btn close-x" aria-label="Закрыть информацию о адресе">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="10" />
+                  <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
+                  <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                    fill="white" />
+                </svg>
+              </button>
+              <div class="contacts__title-address">
+                Студия «High pass»
+              </div>
+              <div class="contacts__location">
+                107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82
+              </div>
+              <a href="tel:+749542423532" class="contacts__tel tel">
+                +7 495 424-23-532
+              </a>
+            </address>
+            <div id="map"></div>
+          </div>
+          <form class="contacts__form">
+            <h3 class="contacts__form-title">
+              Оставить заявку
+            </h3>
+            <p class="contacts__form-descr">
+              Оставьте ваши данные, указав в&nbsp;графе &laquo;Комментарий&raquo; желаемые время и&nbsp;дату съёмки или
+              другого мероприятия
+            </p>
+            <div class="contacts__input-wrapper wrapper-for-input-error">
+              <input type="text" name="name" placeholder="Имя" class="contacts__input" data-text="true">
+            </div>
+            <div class="contacts__input-wrapper wrapper-for-input-error">
+              <input type="text" name="mail" placeholder="Email" data-email="true" class="contacts__input">
+            </div>
+            <textarea name="post" cols="30" rows="6" class="contacts__text-area" placeholder="Комментарий"></textarea>
+            <button class="contacts__form-btn prim-button" aria-label="Отправить заявку">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo-wrapper">
+        <picture>
+          <source srcset="./resorces/images/logo-small.png" media="(max-width: 530px)">
+          <source srcset="./resorces/images/Logo-1024.png" media="(max-width: 1390px)">
+          <img src="./resorces/images/Logo.png" alt="Логотип">
+        </picture>
+        <div>
+          Фотостудия High pass<sup class="reg">&reg;</sup> 2018&ndash;2020
+        </div>
+      </div>
+      <div class="footer__descr">
+        Которая из&nbsp;моих фотографий самая любимая? Та, которую я&nbsp;собираюсь снять завтра.
+        &copy;&nbsp;Имоджен Каннингем
+      </div>
+      <div class="footer__soc">
+        <span class="footer__soc-text">
+          Больше интересного:
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://ok.ru" class="footer__link" target="_blank">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="resorces/images/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://vk.com" class="footer__link" target="_blank">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="resorces/images/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__window">
+      <button class="modal__close reset-style-btn close-x" aria-label="Закрыть модально окно">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="#999999"></circle>
+          <rect x="6.20715" y="4.5" width="25" height="3" transform="rotate(45 6.20715 5.5)" fill="white"></rect>
+          <rect x="0" y="19.9854" width="25" height="3" transform="rotate(-45 5.59143 13.9854)" fill="white"></rect>
+        </svg>
+      </button>
+      <h3 class="modal__text title">
+        Спасибо за ваше сообщение! Мы скоро свяжемся с вами!
+      </h3>
+    </div>
+  </div>
+</body>
+<script type="module" src="./script/main.js"></script>
+<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+<script type="text/javascript" >
+  function validate(el, message, valFunc) {
+    if (!valFunc(el.value)) {
+      el.classList.add('error');
+      if (el.parentElement.children.length === 1) {
+        const errorEl = document.createElement('span');
+        errorEl.classList.add('error-input');
+        errorEl.textContent = message;
+        el.parentElement.append(errorEl);
+      }
+      return false;
+    } else {
+      el.classList.remove('error');
+      if (el.parentElement.children.length > 1) {
+        el.parentElement.querySelector('.error-input').remove();
+      }
+      return true;
+    }
+  }
+
+  function validateInput() {
+    document.querySelectorAll('input[data-email=true]').forEach((el) => {
+      el.addEventListener('input', (e) => {
+        validate(e.currentTarget, 'Некорректный формат почты', validator.isEmail);
+      });
+    });
+
+    document.querySelectorAll('input[data-text=true]').forEach((el) => {
+      el.addEventListener('input', (e) => {
+        validate(e.currentTarget, 'Незаполненное поле!', (val) => {
+          return val.length > 0;
+        });
+      });
+    });
+  }
+
+  function openModal() {
+    document.querySelector('.modal').classList.add('modal--close');
+    document.querySelector('.modal').classList.add('modal--active');
+    document.body.classList.add('stop-scroll');
+  }
+
+  function listnerOnModal() {
+    document.querySelector('.modal__close').addEventListener('click', () => {
+      document.querySelector('.modal').classList.remove('modal--active');
+      document.body.classList.remove('stop-scroll');
+    });
+
+    document.querySelector('.modal').addEventListener('click', (e) => {
+      if (e.isNotWrapper) return;
+      document.querySelector('.modal').classList.remove('modal--active');
+      document.body.classList.remove('stop-scroll');
+    });
+
+    document.querySelector('.modal__window').addEventListener('click', (e) => {
+      e.isNotWrapper = true;
+    });
+  }
+
+  function validateBeforeSubmitForm() {
+    document.querySelectorAll('form').forEach((el) => {
+      el.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let val = [];
+        el.querySelectorAll('input').forEach((el) => {
+          if (el.classList.contains('error')) {
+            val.push(false);
+          } else {
+            const v = validate(el, 'Незаполненное поле!', (val) => {
+              return val.length > 0;
+            });
+            val.push(v);
+          }
+        });
+        if (!val.includes(false)) {
+          el.querySelectorAll('input').forEach((el) => {
+            el.value = '';
+          });
+          el.querySelectorAll('textarea').forEach((el) => {
+            el.value = '';
+          });
+          openModal();
+        }
+      });
+    });
+  }
+  validateInput();
+  listnerOnModal();
+  validateBeforeSubmitForm();
+</script>
+
+</html>

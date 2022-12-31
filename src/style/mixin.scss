@@ -1,0 +1,11 @@
+@import './fonts-import.scss';
+
+@mixin resetPaddingMargin {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin roboto-400 {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+}

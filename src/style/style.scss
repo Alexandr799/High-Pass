@@ -1,0 +1,501 @@
+@import "./fonts-import.scss";
+@import "./normalize.scss";
+@import "./default.scss";
+@import "./mixin.scss";
+@import "./var.scss";
+
+.header {
+  background-color: $background-color-2;
+
+  &__container {
+    position: relative;
+    display: flex;
+    padding: 23px 0;
+  }
+
+  &__logo {
+    margin-right: 140px;
+  }
+
+  &__search-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; 
+  }
+
+
+  &__search {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__search-input {
+    position: absolute;
+    height: 100%;
+    top:0;
+    right: 0;
+    width: 342px;
+    background-color: $background-color-2;
+    border: none;
+    border-bottom: 1px solid $default-5;
+    color: $default-5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color:$default-5;
+    transform:scaleX(0);
+    &::placeholder {
+      color: $default-5;
+      opacity: 1;
+    }
+  }
+
+  .search--disabled {
+    transform-origin: right;
+    transition:transform 0.3s ease-in-out;
+  }
+
+  .search--active {
+    transform:scaleX(1);
+    transform-origin: right;
+    transition:transform 0.3s ease-in-out
+  }
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  &__list {
+    @include resetPaddingMargin();
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 79px;
+    color: $default-1;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.hero {
+  padding: 41px 0 57px 0;
+  background-color: $background-color-1;
+
+  &__title {
+    @include resetPaddingMargin();
+    margin-bottom: 19px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 104%;
+    display: flex;
+    align-items: flex-end;
+    color: $default-1;
+  }
+
+  &__descr {
+    margin-bottom: 3px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    @include resetPaddingMargin();
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 104%;
+    color: $background-color-2;
+  }
+}
+
+.hero-grid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(343px, auto);
+  grid-auto-rows: minmax(257px, auto);
+  gap: 30px;
+
+  &__item {
+    grid-column: span 3;
+  }
+
+  &__img {
+    height: 257px;
+  }
+  &__head-item {
+    position: relative;
+    grid-column: span 6;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-right: 145px;
+    padding-bottom: 62px;
+    background-image: url("../resorces/images/neon-set.jpg");
+    background-position: cover;
+  }
+
+  &__hash {
+    top: 15px;
+    right: 15px;
+  }
+
+  &__subhead-item {
+    grid-column: span 6;
+    background-position: bottom;
+    background-image: url("../resorces/images/subphoto.jpg");
+    padding-bottom: 318px;
+  }
+}
+
+.about {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background: $background-color-2;
+
+  &__title {
+    color: $default-1;
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: span 2;
+    padding-top: 282px;
+    background-image: url("../resorces/images/photoapparat.jpg");
+    background-position: top;
+  }
+
+  &__text {
+    grid-column: span 2;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $default-2;
+  }
+
+  &__input-wrapper {
+    display: flex;
+  }
+
+  &__title-form {
+    @include resetPaddingMargin();
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: $default-1;
+  }
+
+  &__input {
+    width: 470px;
+    padding: 15px 20px;
+    background: #4a4a4a;
+    border: none;
+    margin-right: 30px;
+    align-items: center;
+  }
+}
+
+.project {
+  padding-top: 70px;
+  padding-bottom: 66px;
+  background-color: $background-color-1;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    @include resetPaddingMargin();
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+  }
+
+  &__item {
+    grid-column: span 2;
+  }
+
+  .item-big {
+    grid-column: span 6;
+  }
+
+  &__article-small,
+  &__article-big {
+    position: relative;
+  }
+
+  &__article-small {
+    display: flex;
+    flex-direction: column;
+    padding-top: 202px;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__article-big {
+    min-height: 100%;
+    padding: 22px 308px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: cover;
+  }
+
+  &__article-title {
+    @include resetPaddingMargin();
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $background-color-2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__article-title-big {
+    @include resetPaddingMargin();
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $default-1;
+    margin-bottom: 6px;
+  }
+
+  &__article-descr {
+    @include resetPaddingMargin();
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+
+  &__hash {
+    top: 2px;
+    right: 7px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: $default-3;
+    padding-left: 17px;
+    background-image: url("../resorces/images/calendar.svg");
+  }
+
+  &__btn {
+    margin-top: auto;
+    justify-self: flex-end;
+  }
+
+  .item-medium {
+    grid-column: span 3;
+  }
+
+  .project-photo-1 {
+    background-image: url("../resorces/images/small-photo-1.jpg");
+  }
+
+  .project-photo-2 {
+    background-image: url("../resorces/images/small-photo-2.jpg");
+  }
+
+  .project-photo-3 {
+    background-image: url("../resorces/images/small-photo-3.jpg");
+  }
+
+  .project-photo-4 {
+    background-image: url("../resorces/images/baba-za-penkom.jpg");
+  }
+
+  .project-photo-5 {
+    background-image: url("../resorces/images/zabveniye.jpg");
+  }
+
+  .project-photo-6 {
+    background-image: url("../resorces/images/fructy.jpg");
+  }
+
+  .project-photo-7 {
+    background-image: url("../resorces/images/baba-i-zazhaluzi.jpg");
+  }
+}
+
+.contacts {
+  background-color: $background-color-1;
+  padding-bottom: 68px;
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(460px, auto);
+    gap: 30px;
+  }
+
+  &__map-wrapper {
+    position: relative;
+    grid-column: span 8;
+  }
+
+  &__form {
+    grid-column: span 4;
+  }
+
+  &__address {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 60px;
+    justify-content: center;
+    width: 48%;
+    min-height: 100%;
+    z-index: 1000;
+    background: rgba(32, 32, 32, 0.85);
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__title-address {
+    @include resetPaddingMargin();
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 22px;
+    color: $default-1;
+    margin-bottom: 5px;
+  }
+
+  &__location {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $default-2;
+    margin-bottom: 3px;
+  }
+
+  &__form-title {
+    @include resetPaddingMargin();
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: $background-color-2;
+  }
+
+  &__form-descr {
+    @include resetPaddingMargin();
+    margin-bottom: 12px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $default-3;
+  }
+
+  &__input,
+  &__text-area {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 22px 16px 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $default-3;
+    background: $default-6;
+    border: none;
+  }
+}
+
+.footer {
+  background-color: $background-color-2;
+  padding-top: 22px;
+  padding-bottom: 16px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-wrapper {
+    margin-right: 204px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #e9e9e9;
+  }
+
+  &__descr {
+    width: 361px;
+    margin-right: 328px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #cacaca;
+  }
+
+  &__soc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__soc-text {
+    margin-bottom: 8px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #cacaca;
+  }
+
+  &__list {
+    @include resetPaddingMargin();
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@import "./media-1390.scss";
+@import "./media-1000.scss";
+@import "./media-766.scss";
+@import './media-530.scss';
+@import './media-390.scss';
+@import './ui.scss';

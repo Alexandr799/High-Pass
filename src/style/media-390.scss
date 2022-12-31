@@ -1,0 +1,18 @@
+@media (max-width: 390px) {
+    .contacts {
+        &__container {
+            max-width: 100%;
+        }
+
+        &__title {
+            max-width: 278px;
+            margin: 0 auto;
+            margin-bottom: 12px;
+        }
+        
+        &__form {
+            max-width: 278px;
+            margin: 0 auto; 
+        }
+      }
+}

@@ -1,0 +1,328 @@
+@media (max-width: 530px) {
+    .container {
+        max-width: 278px;
+    }
+
+    .prim-button, 
+    .secondary-button {
+        padding: 12px 22px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .hash {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .header {
+        &::after {
+            top: 70px;
+        }
+    
+        &__logo {
+            margin-bottom: 21px;
+        }
+    }
+
+    .hero {
+        padding: 30px 0 49px 0;
+    }
+
+    .search svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .burger {
+        height: 18px;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        span {
+            background-color: $default-1;
+            width: 100%;
+            height: 2px;
+        }
+
+        span:last-child {
+            width: 50%;
+        }
+    }
+
+    .nav {
+        padding-top: 14px;
+        padding-bottom: 13px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            padding: 85px 20px 60px 20px;
+            align-items: flex-start;
+            justify-content: stretch;
+            background-color: $background-color-2;
+            top: 0;
+            left: -101vw;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            transform: translateX(0);
+            transition: 0.3s transform ease-in-out;
+        }
+
+        &__list--active {
+            transform: translateX(101vw);
+            transition: 0.3s transform ease-in-out;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        .tel-item {
+            position: absolute;
+            display: block;
+            bottom: 36px;
+        }
+
+        .close-x {
+            position: absolute;
+            top: 14px;
+            left: 21px;
+        }
+
+        .nav__item.display-none {
+            display: block;
+        }
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(422px, auto) minmax(240px, auto);
+        grid-auto-rows: minmax(105px, auto);
+
+        &__item {
+            grid-column: span 2;
+        }
+
+        &__img {
+            height: 105px;
+        }
+
+        &__head-item {
+            grid-column: span 4;
+            grid-row: span 1;
+            padding-left: 59px;
+            padding-right: 145px;
+            padding-bottom: 62px;
+            background-image: url("../resorces/images/hero-photo-latst-1.jpg");
+            background-position: cover;
+            padding: 29px;
+        }
+
+        &__hash {
+            top: 15px;
+            right: 15px;
+        }
+
+        &__subhead-item {
+            grid-column: span 4;
+            grid-row: span 1;
+            background-size: contain;
+            background-position: bottom;
+            background-image: url("../resorces/images/hero-photo-latst-2.jpg");
+            padding-bottom: 200px;
+        }
+    }
+
+    .about {
+        &__form {
+            background-size: contain;
+            background-image: url("../resorces/images/about.jpg");
+            padding-top: 297px;
+        }
+
+        &__input {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        &__title-form{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__input{
+            font-size: 14px;
+            line-height: 16px;
+            padding: 12px 20px;
+            margin-bottom:20px;
+        }
+    }
+
+    .project {
+        padding-top: 47px;
+        padding-bottom: 56px;
+
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 278px;
+            grid-auto-rows: minmax(278px, auto);
+        }
+
+        &__item {
+            grid-column: span 4;
+        }
+
+        &__item:nth-child(3) {
+            grid-column: span 4;
+        }
+
+        & .item-big {
+            grid-column: span 4;
+            min-height: 422px;
+        }
+
+        & .item-medium {
+            grid-column: span 4;
+            min-height: 300px;
+        }
+
+        &__article-big {
+            padding: 204px 32px 24px 27px;
+        }
+
+        &__article-descr {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        
+        .project-photo-1 {
+        background-image: url("../resorces/images/pro-1.jpg");
+        }
+    
+        .project-photo-2 {
+        background-image: url("../resorces/images/pro-2.jpg");
+        }
+    
+        .project-photo-3 {
+        background-image: url("../resorces/images/pro-3.jpg");
+        }
+    
+        .project-photo-4 {
+        background-image: url("../resorces/images/pro-4.jpg");
+        }
+    
+        .project-photo-5 {
+        background-image: url("../resorces/images/pro-6.jpg");
+        }
+    
+        .project-photo-6 {
+        background-image: url("../resorces/images/pro-7.jpg");
+        }
+    
+        .project-photo-7 {
+        background-image: url("../resorces/images/pro-5.jpg");
+        }
+    }
+
+    .contacts {
+        padding-bottom: 48px;
+        &__title-address {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        &__grid {
+            grid-template-rows: minmax(472px, auto);
+            grid-auto-rows: minmax(429px, auto);
+          }
+
+        &__location {
+            margin-bottom: 11px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__title-address {
+            margin-bottom: 10px;
+        }
+
+        &__grid {
+            gap:18px;
+        }
+
+        &__tel {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__address {
+            padding: 27px 21px 21px 19px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+
+        &__form-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__form-descr {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__text-area {
+            padding-bottom: 40px;
+        }
+    }
+
+    .footer {
+        position: relative;
+        background-color: #202020;
+        padding-top: 31px;
+        padding-bottom: 88px;
+
+        &__container {
+            justify-content: center;
+        }
+
+        &__logo-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 12px;
+            padding-top: 13px;
+            background-color: $default-4;
+
+            div {
+                font-size: 10px;
+                line-height: 13px;
+            }
+        }
+    }
+}

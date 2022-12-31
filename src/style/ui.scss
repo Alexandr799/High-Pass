@@ -1,0 +1,165 @@
+@import './var.scss';
+
+.secondary-button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.secondary-button:hover {
+    background-color: $color-btn-prim;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.secondary-button:focus-visible {
+    background-color: $color-focus;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.secondary-button:active {
+    background-color: $color-active;
+    border-color: $color-active;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+.prim-button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.prim-button:hover {
+    background-color: $color-focus;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.prim-button:focus-visible {
+    outline: 3px solid $color-active;
+    background-color: $color-btn-prim;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.prim-button:active {
+    background-color: $color-active;
+    border-color: $color-active;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.nav__link, .tel {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover, .tel:hover {
+    color:$color-btn-prim;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__link:focus-visible, .tel:focus-visible {
+    color: $default-1;
+    background-color: $color-focus;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.nav__link:active, .tel:active {
+    color:$color-active;
+    background-color:inherit;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.footer__link path , 
+.search path, 
+.close-x circle, 
+.btn-cls circle{
+    fill:$default-2;
+}
+
+.footer__link:hover path, 
+.search:hover path, 
+.close-x:hover circle, 
+.btn-cls:hover circle{
+    fill:$color-btn-prim;
+    transition: fill .3s ease-in-out;
+}
+
+.footer__link:focus-visible path, 
+.search:focus-visible path, 
+.close-x:focus-visible circle, 
+.btn-cls:focus-visible circle{
+    fill:$color-focus;
+    transition: fill .3s ease-in-out;
+}
+
+.footer__link:active path, 
+.search:active path, 
+.close-x:active circle, 
+.btn-cls:active circle{
+    fill:$color-active;
+    transition: fill .3s ease-in-out;
+}
+
+.about__input::placeholder, 
+.contacts__input::placeholder,
+.contacts__text-area::placeholder{
+    color: $default-3;
+    transition: color .3s ease-in-out;
+}
+
+
+.about__input:hover::placeholder, 
+.contacts__input:hover::placeholder,
+.contacts__text-area:hover::placeholder{
+    color:$color-btn-prim;
+    transition: color .3s ease-in-out;
+}
+
+.about__input:focus-visible::placeholder, 
+.contacts__input:focus-visible::placeholder,
+.contacts__text-area:focus-visible::placeholder {
+    color: $default-3;
+    transition: color .3s ease-in-out;
+}
+
+.about__input:focus-visible, 
+.contacts__input:focus-visible,
+.contacts__text-area:focus-visible {
+    outline: 1px solid $color-btn-prim;
+    transition: outline .3s ease-in-out;
+}
+
+input.error {
+    outline: 1px solid $color-error !important;
+}
+
+
+.tel {
+    transition: color 0.3s ease-in-out;
+}
+
+.tel:hover {
+    color:$color-focus;
+    transition: color 0.3s ease-in-out;
+}
+
+.tel:focus-visible {
+    color:$default-1;
+    background-color: $color-focus;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.tel:active {
+    color:$color-active;
+    background-color:inherit;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.contacts__address {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3 ease-in-out, visibility .3s ease-in-out;
+}
+
+.contacts__address--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3 ease-in-out, visibility .3s ease-in-out;
+}
+
+
+

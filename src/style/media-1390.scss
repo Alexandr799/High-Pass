@@ -1,0 +1,180 @@
+@media (max-width: 1390px) {
+    .container {
+        max-width: 963px;
+    }
+
+    .header {
+        &__container {
+            padding: 25px 0;
+        }
+
+        &__logo {
+            margin-right: 84px;
+        }
+    }
+
+    .nav__item {
+        margin-right: 33px;
+    }
+
+    .hero {
+        padding: 34px 0 65px 0;
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__descr {
+            margin-bottom: 9px;
+        }
+    }
+
+    .hero-grid {
+        grid-template-rows: minmax(405px, auto);
+        grid-auto-rows: minmax(186px, auto);
+
+        &__img {
+            height: 186px;
+        }
+
+        &__head-item {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 34px;
+            background-image: url("../resorces/images/photo-apparat-1024.jpg");
+        }
+
+        &__subhead-item {
+            padding-bottom: 341px;
+            background-image: url("../resorces/images/baba-sinya-lampa-1024.jpg");
+        }
+    }
+
+    .about {
+        padding-bottom: 82px;
+
+        &__form {
+            background-image: url("../resorces/images/canon-1024.jpg");
+            padding-top: 352px;
+        }
+
+        &__input {
+            width: 343px;
+            margin-bottom: 24px;
+        }
+
+        &__input-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .project {
+
+        &__list {
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: 285px;
+            grid-auto-rows: minmax(307px, auto);
+            gap: 24px;
+        } 
+        
+        &__item {
+            grid-column: span 6;
+        }
+
+        &__item:nth-child(3) {
+            grid-column: span 12;
+        }
+
+        & .item-big {
+            grid-column: span 15;
+        }
+
+        & .item-medium {
+            grid-column: span 9;
+        }
+
+        &__article-title {
+            -webkit-line-clamp: 2;
+        }
+
+        & .item-medium &__article-title {
+            -webkit-line-clamp: 3;
+        }
+
+        &__article-big {
+            padding: 29px 308px 33px 30px;
+        }
+
+        .project-photo-1 {
+            background-image: url("../resorces/images/small-image-1-1024.jpg");
+        }
+
+        .project-photo-2 {
+            background-image: url("../resorces/images/small-image-2-1024.jpg");
+        }
+
+        .project-photo-3 {
+            background-image: url("../resorces/images/small-image-3-1024.jpg");
+        }
+
+        .project-photo-4 {
+            background-image: url("../resorces/images/baba-za-penkom-1024.jpg");
+        }
+
+        .project-photo-5 {
+            background-image: url("../resorces/images/sinaya-fignya.jpg");
+        }
+
+        .project-photo-6 {
+            background-image: url("../resorces/images/fructy-1024.jpg");
+        }
+
+        .project-photo-7 {
+            background-image: url("../resorces/images/baba-i-zhavuyzi-1024.jpg");
+        }
+    }
+
+    section.project > div > ul > li:nth-child(5) {
+        order: 1;
+    }
+
+    .contacts {
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-auto-rows: minmax(460px, auto);
+            gap: 30px;
+        }
+
+        &__map-wrapper {
+            padding-top: 303px;
+            grid-column: span 15;
+        }
+
+        &__form {
+            grid-column: span 9;
+        }
+
+        &__address {
+            padding: 20px 50px 20px 30px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+
+        &__tel {
+            justify-self: flex-start;
+        }
+    }
+
+    .footer {
+        &__logo-wrapper {
+            margin-right: 137px;
+        }
+
+        &__descr {
+            margin-right: 68px;
+        }
+    }
+}

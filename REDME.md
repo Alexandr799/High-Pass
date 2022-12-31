@@ -1,6 +1,6 @@
 # Сайт High Pass
 
-# [Ссылка на проект](https://notes.alexstrigo.ru/)
+# [Ссылка на проект](https://highpass.alexstrigo.ru/)
 
 Сборка проекта выполнена на gulp
 
